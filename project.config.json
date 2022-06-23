@@ -1,9 +1,11 @@
 {
-  "miniprogramRoot": "miniprogram/",
-  "cloudfunctionRoot": "cloudfunctions/",
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
   "setting": {
     "urlCheck": true,
-    "es6": false,
+    "es6": true,
     "enhance": true,
     "postcss": true,
     "preloadBackgroundData": false,
@@ -39,10 +41,19 @@
     "useCompilerPlugins": false,
     "ignoreUploadUnusedFiles": true
   },
-  "projectname": "miniMusic",
-  "libVersion": "2.21.4",
-  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
+  "compileType": "miniprogram",
+  "libVersion": "2.24.6",
   "appid": "wx12da8a96bf6aaaa2",
+  "projectname": "MiniCloudMusic",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "scripts": {},
+  "staticServerOptions": {
+    "baseURL": "",
+    "servePath": ""
+  },
+  "isGameTourist": false,
   "condition": {
     "search": {
       "list": []
@@ -50,20 +61,17 @@
     "conversation": {
       "list": []
     },
-    "plugin": {
-      "list": []
-    },
     "game": {
       "list": []
     },
+    "plugin": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
     "miniprogram": {
-      "list": [
-        {
-          "id": -1,
-          "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
-        }
-      ]
+      "list": []
     }
   }
 }

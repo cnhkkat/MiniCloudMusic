@@ -4,7 +4,7 @@
  * @Author: wutingting
  * @Date: 2022-02-11 11:54:13
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-04-21 23:35:30
+ * @LastEditTime: 2022-06-23 22:36:38
  */
 // 云函数入口文件
 const cloud = require('wx-server-sdk')
@@ -17,7 +17,7 @@ const db = cloud.database()
 
 const axios = require('axios')
 const MAX_LIMIT = 150
-const URL = `https://apis.imooc.com/personalized?limit=${MAX_LIMIT}&icode=C28CC93E97096979`
+const URL = `https://apis.imooc.com/personalized?limit=${MAX_LIMIT}&icode=C45CB728700C8355`
 const playlistCollection = db.collection('playlist')
 
 // 云函数入口函数
