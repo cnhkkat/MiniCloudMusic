@@ -1,0 +1,11 @@
+<!--components/search/index.wxml-->
+<view class="container">
+  <input class="input" type="search"
+        confirm-type="search" placeholder="{{placeholder}}" placeholder-class="placeholder-class" bind:input="onInput" value="{{value}}">
+    <i class="iconfont icon-sousuo1 find"></i>
+  </input>
+  <view hidden="{{!searchClearVisible}}" class="clear-wrap" catch:tap="onClearInputValue">   
+      <i class="iconfont icon-chacha clear" ></i>
+  </view>
+  <button class="search-btn" bind:tap="onSearch">搜索</button>
+</view>

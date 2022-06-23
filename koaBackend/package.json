@@ -1,0 +1,19 @@
+{
+  "name": "koabackend",
+  "version": "1.0.0",
+  "description": "后端管理系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.4",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.1.1",
+    "koa2-cors": "^2.0.6",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6"
+  }
+}

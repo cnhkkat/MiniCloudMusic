@@ -1,0 +1,29 @@
+/*
+ * @Descripttion:
+ * @version:
+ * @Author: wutingting
+ * @Date: 2022-02-10 19:05:03
+ * @LastEditors: wutingting
+ * @LastEditTime: 2022-02-10 22:05:04
+ */
+
+var formatPlayCount = function (count) {
+  var million = Math.pow(10, 6); //百万
+  var hundredMillion = Math.pow(10, 8); //亿
+
+  var digits = Math.pow(10, 2); //保留2位小数
+  var hMPoint = Math.pow(10, 6);
+
+  return count >= hundredMillion
+    ? Math.floor(count / hMPoint) / digits + '亿'
+    : count >= million
+    ? Math.floor(count / digits) / digits + '万'
+    : count;
+};
+
+// Math.floor(1001291.12/100) / 100 =  100.12 万
+// Math.floor(133612911.12/1000000) / 100 = 1.33 亿
+
+module.exports = {
+  formatPlayCount: formatPlayCount,
+};

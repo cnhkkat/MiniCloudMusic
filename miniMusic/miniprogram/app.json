@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/blog/index",
+    "pages/profile/index",
+    "pages/playlist/index",
+    "pages/musicList/index",
+    "pages/player/index",
+    "pages/blogEdit/index",
+    "pages/blogComment/index",
+    "pages/playHistory/index",
+    "pages/blogHistory/index"
+  ],
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d43c33",
+    "navigationBarTitleText": "云音乐",
+    "navigationBarTextStyle": "white"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/playlist/index",
+        "text": "音乐",
+        "iconPath": "images/music.png",
+        "selectedIconPath": "images/music-actived.png"
+      },
+      {
+        "pagePath": "pages/blog/index",
+        "text": "发现",
+        "iconPath": "images/blog.png",
+        "selectedIconPath": "images/blog-actived.png"
+      },
+      {
+        "pagePath": "pages/profile/index",
+        "text": "我的",
+        "iconPath": "images/profile.png",
+        "selectedIconPath": "images/profile-actived.png"
+      }
+    ],
+    "color": "#999",
+    "selectedColor": "#d43c43",
+    "backgroundColor": "#fff",
+    "borderStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}

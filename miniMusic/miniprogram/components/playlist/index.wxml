@@ -1,0 +1,7 @@
+<!--components/playlist/index.wxml-->
+<wxs module="utils" src="../../utils/common.wxs"></wxs>
+<view class="playlist-container" bind:tap="goToMusicList">
+  <image src="{{playlist.picUrl}}" class="playlist-img"></image>
+  <text class="playlist-playcount">{{utils.formatPlayCount(playlist.playCount)}}</text>
+  <view class="playlist-name two-text-ellipsis">{{playlist.name}}</view>
+</view>

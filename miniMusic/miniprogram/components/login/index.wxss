@@ -1,0 +1,8 @@
+/* components/login/index.wxss */
+.login {
+  background: #d43c43;
+  font-size: 32rpx;
+  height: 80rpx;
+  margin: 110rpx;
+  color: #fff;
+}

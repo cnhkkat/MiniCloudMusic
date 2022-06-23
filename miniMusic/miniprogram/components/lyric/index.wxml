@@ -1,0 +1,8 @@
+<!--components/lyric/index.wxml-->
+<scroll-view hidden="{{!isShowLyric}}" class="lyric-scroll" scroll-y scroll-top="{{scrollTop}}" scroll-with-animation="{{true}}">
+<view class="lyric-panel">
+  <block wx:for="{{lrcList}}" wx:key="item">
+    <view class="lyric {{index === nowLyricIndex ? 'hightlightLyric':''}}">{{item.lrc}}</view>
+  </block>
+</view>
+</scroll-view>

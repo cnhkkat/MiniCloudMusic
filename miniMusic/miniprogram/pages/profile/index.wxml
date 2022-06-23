@@ -1,0 +1,36 @@
+<!--pages/profile/index.wxml-->
+<view class="profile-header">
+  <view class="avatar">
+    <open-data type="userAvatarUrl"></open-data>
+  </view>
+  <open-data type="userNickName" class="nickname"></open-data>
+  <!-- <button class="avatar-wrapper" open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
+    <image class="avatar" src="{{avatarUrl}}"></image>
+  </button> 
+  <input type="nickname" class="nickname" placeholder="请输入昵称"/> -->
+</view>
+
+<view class="nav">
+  <view class="nav-item">
+    <navigator class="content" hover-class="none" url="/pages/playHistory/index">
+      <i class="iconfont icon-zuijinbofang1"></i>
+      <text class="text">最近播放</text>
+      <i class="iconfont icon-xiangyou"></i>
+    </navigator>
+  </view>
+  <view class="nav-item">
+    <navigator class="content" hover-class="none" url="/pages/blogHistory/index">
+      <i class="iconfont icon-shoucang"></i>
+      <text class="text">我的发现</text>
+      <i class="iconfont icon-xiangyou"></i>
+    </navigator>
+  </view>
+  <view class="nav-item" bind:tap="onTapQrCode">
+    <view class="content" bind:tap="onTapQrCode">
+      <i class="iconfont icon-erweima"></i>
+      <text class="text">小程序码</text>
+      <i class="iconfont icon-xiangyou"></i>
+    </view>
+  </view>
+
+</view>

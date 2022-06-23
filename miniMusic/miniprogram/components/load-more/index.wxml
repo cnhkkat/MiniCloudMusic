@@ -1,0 +1,4 @@
+<!--components/load-more/index.wxml-->
+<view class="component-load-more">
+  <view class="text">{{text}}</view>
+</view>

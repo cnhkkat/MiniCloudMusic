@@ -1,0 +1,20 @@
+<!--pages/musicList/components/musicList/index.wxml-->
+<block wx:for="{{musicList}}" wx:key="id">
+  <view class="musicList-container {{musicId === item.id ? 'playing' : ''}}" bind:tap="onSelectClick" data-music-id="{{item.id}}" data-index="{{index}}">
+    <view wx:if="{{musicId === item.id}}"  class="musicList-index">
+      <i class="iconfont icon-bofangzhong"></i>
+    </view> 
+    <view wx:else class="musicList-index">
+      {{index+1}}
+    </view> 
+    <view class="music-info">
+      <view class="song-name one-text-ellipsis">
+      {{item.name}}
+      <view wx:if="{{item.alia.length>0}}" class="alia">({{item.alia[0]}})</view>
+      </view>
+      <view class="singer-name one-text-ellipsis">
+      {{item.ar[0].name}} - {{item.al.name}}
+      </view>
+    </view>
+  </view>
+</block>

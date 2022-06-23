@@ -1,0 +1,22 @@
+<!--components/blogCard/index.wxml-->
+<view class="blog">
+  <view class="blog-title">
+    <image class="avatar" src="{{blog.avatarUrl}}"></image>
+    <view class="blog-box">
+      <text class="nickname">{{blog.nickname}}</text>
+      <text class="createTime">{{_createTime}}</text>
+    </view>
+  </view>
+  <view class="blog-content">
+  <text>{{blog.content}}</text>
+  </view>
+    <view class="blog-img">
+      <block wx:for="{{blog.img}}" wx:key="index">
+        <image class="img" src="{{item}}" 
+        mode="aspectFill" 
+        catch:tap="onPreviewImage"
+        data-imgs="{{blog.img}}"
+        data-imgsrc="{{item}}"></image>
+      </block>
+    </view>
+</view>

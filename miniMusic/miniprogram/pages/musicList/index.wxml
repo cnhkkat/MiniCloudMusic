@@ -1,0 +1,10 @@
+<!--pages/musicList/index.wxml-->
+<view class="page-musicList" style="background: url({{listInfo.coverImgUrl}}) no-repeat top/cover"></view>
+<view class="mask"></view>
+<view class="info">
+  <image class="coverImg" src="{{listInfo.coverImgUrl}}"></image>
+  <view class="detail">
+    <view class="name two-text-ellipsis">{{listInfo.name}}</view>
+  </view>
+</view>
+<musicList musicList="{{musicList}}"/>

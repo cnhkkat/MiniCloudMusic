@@ -1,0 +1,42 @@
+/* pages/musicList/components/musicList/index.wxss */
+.musicList-container {
+  display: flex;
+  align-items: center;
+  padding: 14rpx 20rpx;
+}
+.musicList-index {
+  font-size: 32rpx;
+  color: #888;
+  width: 80rpx;
+  text-align: center;
+  margin-right: 10rpx;
+}
+.music-info {
+  flex: 1;
+  overflow: hidden;
+}
+.music-info .song-name {
+  font-size: 32rpx;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 6rpx;
+}
+.music-info .alia {
+  color: #888;
+  font-size: 24rpx;
+}
+.music-info .singer-name {
+  font-size: 24rpx;
+  color: #888;
+}
+.playing view,
+.playing .song-name,
+.playing .singer-name{
+  color: #d43c43;
+}
+/* icon */
+.bofang {
+  color: #d43c33;
+}

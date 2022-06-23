@@ -1,0 +1,18 @@
+<!--components/blogCtrl/index.wxml-->
+<view class="ctrl">
+  <view class="ctrl-item" bind:tap="subscribeMsg">
+    <i class="iconfont icon-pinglun icon"></i>
+    <text>评论</text>
+  </view>
+  <view class="ctrl-item">
+		<button open-type="share" data-blog-id="{{blogId}}" data-blog="{{blog}}" class="share-btn" hover-class="share-hover">
+			<i class="iconfont icon-fenxiang icon"></i>
+			<text class="item">分享</text>
+		</button>
+  </view>
+</view>
+<login loginPopVisible="{{loginPopVisible}}" bind:loginSuccess="onLoginSuccess" bind:loginFail="onLoginFail"/>
+<popup visible="{{commentPopVisible}}" position="bottom" closeable="true">
+  <textarea class="content" bindinput="onInput" placeholder="发布友善评论..." value="{{content}}" ></textarea>
+  <button bind:tap="send" class="send-btn">发送</button>
+</popup>

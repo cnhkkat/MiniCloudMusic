@@ -1,0 +1,25 @@
+<!--pages/blogEdit/index.wxml-->
+<view class="container">
+  <textarea class="content" placeholder="发布新鲜事..." maxlength="140"
+    bindinput="onInput" 
+    bindfocus="onFocus"
+    bindblur="onBlur" />
+ 
+  <view class="image-list">
+    <!-- 显示图片 -->
+    <block wx:for="{{images}}" wx:key="*this">
+      <view class="image-wrap">
+        <image class="w-full h-full" src="{{item}}" mode="aspectFill" bindtap="onPreviewImage" data-imgsrc="{{item}}"></image>
+        <i class="iconfont icon-chacha" bindtap="onDelImage" data-index="{{index}}"></i>
+      </view>
+    </block>
+    <!-- 选择图片 -->
+    <view class="image-wrap selectphoto" hidden="{{!selectPhoto}}" bindtap="onChooseImage">
+      <i class="iconfont icon-jiahao"></i>
+    </view>
+  </view>
+</view>
+<view class="footer" style="bottom: {{footerBottom}}px">
+  <text class="wordsNum">{{wordsNum}}</text>
+  <button class="send-btn" bindtap="send">发布</button>
+</view>

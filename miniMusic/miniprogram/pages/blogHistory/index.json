@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "blog-card":"/components/blogCard/index",
+    "blog-ctrl":"/components/blogCtrl/index",
+    "load-more":"/components/load-more/index",
+    "no-data":"/components/no-data/index"
+  },
+  "navigationBarTitleText": "我的发现",
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "progress-bar":"/components/progress-bar/index",
+    "lyric":"/components/lyric/index"
+  },
+  "disableScroll": true
+}

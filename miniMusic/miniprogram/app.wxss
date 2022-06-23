@@ -1,0 +1,26 @@
+/**app.wxss**/
+@import 'iconfont.wxss';
+page {
+  /* height: 100%; */
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+.w-full {
+  width: 100%;
+}
+.h-full {
+  height: 100%;
+}
+.one-text-ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  word-break: break-all;
+  text-overflow: ellipsis;
+}
+.two-text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}

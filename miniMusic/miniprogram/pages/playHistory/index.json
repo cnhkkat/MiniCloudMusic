@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "no-data":"/components/no-data/index",
+    "music-list":"/components/musicList/index"
+  },
+  "navigationBarTitleText": "最近播放"
+}

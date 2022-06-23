@@ -1,0 +1,6 @@
+<!--components/login/index.wxml-->
+<popup position="bottom" visible="{{loginPopVisible}}" round>
+    <button class="login"
+      bindtap="onGotUserInfo"
+    >获取微信授权信息</button>
+</popup>

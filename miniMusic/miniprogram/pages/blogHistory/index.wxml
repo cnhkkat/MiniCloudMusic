@@ -1,0 +1,7 @@
+<!--pages/blogHistory/index.wxml-->
+<block wx:for="{{blogList}}" wx:key="index">
+  <blog-card blog="{{item}}" bind:tap="onComment" data-blog-id="{{item._id}}"/>
+  <blog-ctrl blogId="{{item._id}}" blog="{{item}}"/>
+</block>
+<load-more wx:if="{{blogList.length>0}}" isLoading="{{isLoading}}" isEnd="{{endPage}}" endTxt="hi，到底啦~"/>
+<no-data wx:if="{{endPage && blogList.length===0}}" />

@@ -1,0 +1,82 @@
+/* pages/blogEdit/index.wxss */
+page {
+  background: #fff;
+}
+.container{
+  padding: 20rpx;
+}
+.content {
+  height: 360rpx;
+  width: 100%;
+}
+.footer {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background: #f1f1f1;
+  padding: 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.wordsNum {
+  flex: 1;
+  text-align: right;
+  color: #d43c43;
+  font-size: 32rpx;
+  padding-right: 30rpx;
+}
+.send-btn {
+  margin-right: 20rpx;
+  background: #d43c43;
+  color: #fff;
+  font-size: 24rpx;
+}
+
+/* 图片样式 */
+.image-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20rpx;
+}
+.image-wrap {
+  width: 230rpx;
+  height: 230rpx;
+  margin-bottom: 10rpx;
+  margin-right: 10rpx;
+  position: relative;
+  /* overflow: hidden;
+  text-align: center; */
+}
+.image-wrap:nth-child(3n){
+  margin-right: 0;
+}
+.selectphoto {
+  /* border: 2rpx dashed #cbd1d7; */
+  background: #f1f1f1;
+  position: relative;
+}
+.icon-jiahao {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 60rpx;
+  color: #cbd1d7;
+}
+.icon-chacha {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* transform: translateX(50%); */
+  width: 40rpx;
+  height: 40rpx;
+  background: #000;
+  opacity: 0.4;
+  border-radius: 50%;
+  font-size: 36rpx;
+  color: #fff;
+  z-index: 9;
+  text-align: center;
+}

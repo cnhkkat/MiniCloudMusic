@@ -1,0 +1,14 @@
+/* components/load-more/index.wxss */
+.component-load-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24rpx;
+  color: #dddddd;
+  height: 90rpx;
+  margin-bottom: 30rpx;
+}
+.component-load-more .text {
+  color: #ccc;
+  margin: 0 20rpx;
+}

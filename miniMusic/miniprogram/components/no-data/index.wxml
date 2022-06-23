@@ -1,0 +1,10 @@
+<!--components/no-data/index.wxml-->
+<view class="no-data" wx:if="{{!isLoading}}" style="{{ bgStyle }}">
+  <!-- <image
+    src="{{img || 'https://static.tuandongdong.cn/ui/mini-groupdd/placeholder/common_placeholder_general.png'}}"
+    mode="widthFix"
+    class="no-data-img"
+  /> -->
+  <i class="iconfont icon--zanwuneirong icon"></i>
+  <text class="no-data-tip">{{tip}}</text>
+</view>

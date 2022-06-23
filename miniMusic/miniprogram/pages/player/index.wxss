@@ -1,0 +1,102 @@
+/* pages/player/index.wxss */
+.player-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  filter: blur(40rpx);
+  opacity: 0.5;
+}
+.player-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background:#222;
+}
+.player-info {
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.player-disc {
+  width: 592rpx;
+  height: 592rpx;
+  background: url('https://s3.music.126.net/mobile-new/img/disc.png?d3bdd1080a72129346aa0b4b4964b75f=') no-repeat center/contain;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%,140rpx);
+}
+.player-disc::after{
+  content: '';
+  width: 192rpx;
+  height: 274rpx;
+  background: url('https://s3.music.126.net/m/s/img/needle.png?702cf6d95f29e2e594f53a3caab50e12') no-repeat center/contain;
+  position: absolute;
+  top: -150rpx;
+  left: 50%;
+  transform: rotate(-15deg);
+  transform-origin: 24rpx 10rpx;
+  transition: transform .5s ease;
+}
+.play.player-disc::after {
+  transform: rotate(8deg);
+}
+.player-disc .disc-img {
+  width: 368rpx;
+  height: 368rpx;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /* transform: translate(-50%,-50%);  */
+  margin-left: -184rpx;
+  margin-top: -184rpx;
+}
+.rotation {
+  animation: rotation 12s linear infinite;
+  -moz-animation: rotation 12s linear infinite;
+  -webkit-animation: rotation 12s linear infinite;
+  -o-animation: rotation 12s linear infinite;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.rotation-pause {
+  animation-play-state: paused;
+}
+.progress-bar {
+  width: 90%;
+  position: absolute;
+  bottom: 24%;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  bottom: 8%;
+}
+.control .iconfont {
+  color: #fefefe;
+  font-size: 80rpx;
+}
+.control .icon-bofang1,.control .icon-zanting1{
+  font-size: 120rpx;
+  margin: 0 50rpx;
+}

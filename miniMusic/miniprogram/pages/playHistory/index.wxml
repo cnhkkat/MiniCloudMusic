@@ -1,0 +1,3 @@
+<!--pages/playHistory/index.wxml-->
+<music-list musicList="{{musicList}}"/>
+<no-data wx:if="{{musicList.length === 0}}"/>

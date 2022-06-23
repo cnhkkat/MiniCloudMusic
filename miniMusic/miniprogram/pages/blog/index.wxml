@@ -1,0 +1,25 @@
+<!--pages/blog/index.wxml-->
+<view class="page-blog">
+<!-- 头部 -->
+<view class="head">
+  <view class="publish" bind:tap="onPublish">
+    <i class="iconfont icon-fabu"></i>
+  </view>
+  <view class="search">
+    <search model:value="{{keyword}}" bind:search="onSearch" bind:clear="onClear"/>
+  </view>
+</view>
+<!-- 内容 -->
+<view class="blog-list">
+  <block wx:for="{{blogList}}" wx:key="_id">
+    <view class="blog-panel">
+      <blog-card blog="{{item}}" data-blog-id="{{item._id}}" bind:tap="goToComment"/>
+      <blog-ctrl blogId="{{item._id}}" blog="{{item}}"/>
+    </view>
+  </block>
+</view>
+<load-more wx:if="{{blogList.length>0}}" isLoading="{{isLoading}}" isEnd="{{endPage}}" endTxt="hi，到底啦~"/>
+<no-data wx:if="{{endPage && blogList.length===0}}" />
+<!-- 底部 -->
+<login loginPopVisible="{{loginPopVisible}}" bind:loginSuccess="onLoginSuccess" bind:loginFail="onLoginFail"/>
+</view>

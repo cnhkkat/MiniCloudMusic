@@ -1,0 +1,35 @@
+/* pages/blog/index.wxss */
+.page-blog{
+  background: #f1f1f1;
+}
+.head {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background: #fff;
+  padding: 0 20rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  
+}
+.publish {
+  width: 68rpx;
+  height: 68rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.publish .icon-fabu {
+  font-size: 48rpx;
+}
+.search {
+  flex: 1;
+}
+.blog-list {
+  margin-top: 20rpx;
+}
+.blog-panel {
+  margin-bottom: 20rpx;
+}
